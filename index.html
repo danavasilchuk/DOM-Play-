@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Title Goes Here</title>
+<head>
+  <title>Romeo and Juliet</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
- </head>
- <body>
-     <header>
-     <h1>Title Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
+  <style>
+    /* 
+    .hamlet{
+      background-color: yellow;
+    }
+    */
+  
+    /*
+    #play span{
+      background-color: blue;
+    }
+    */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Romeo and Juliet</h1>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="#" target="_blank">Dom-Play</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <div id="script-explanation">
+      <h2>About this Script</h2>
+      <p>This webpage showcases a condensed version of the famous dialogue between Romeo and Juliet from the play "Romeo and Juliet" by William Shakespeare.</p>
+      <p>Each line of dialogue is attributed to the respective character using the data-actor attribute, allowing for dynamic rendering or further manipulation if needed.</p>
+      <p>To enhance the reading experience, you can interact with the script by clicking on the names of the characters (actors). When you click on an actor's name, the lines spoken by that specific actor will be highlighted. This allows you to focus on the dialogue of individual characters and easily distinguish their lines from the rest of the text.</p>
+      <p>For example, if you click on Romeo's name, only the lines spoken by Romeo will be highlighted. Similarly, if you click on Juliet's name, only the lines spoken by Juliet will be highlighted. Clicking on other actors' names will have the same effect, highlighting only their respective lines.</p>
+      <p>This highlighting feature helps you to navigate the dialogue and better understand the conversation between Romeo and Juliet, emphasizing the distinction between their spoken lines and enhancing readability.</p>
+    </div>
+
+    <div id="play">
+      <h2>Romeo and Juliet Script</h2>
+      <p><span data-actor="romeo">Romeo: But soft! What light through yonder window breaks?</span></p>
+      <p><span data-actor="juliet">Juliet: O Romeo, Romeo! Wherefore art thou Romeo?</span></p>
+      <p><span data-actor="romeo">Romeo: It is the East, and Juliet is the sun.</span></p>
+      <p><span data-actor="juliet">Juliet: Deny thy father and refuse thy name.</span></p>
+      <p><span data-actor="romeo">Romeo: Henceforth, call me Love.</span></p>
+      <p><span data-actor="juliet">Juliet: 'Tis but thy name that is my enemy.</span></p>
+      <p><span data-actor="romeo">Romeo: Shall I hear more, or shall I speak at this?</span></p>
+      <p><span data-actor="juliet">Juliet: What's in a name? That which we call a rose by any other word would smell as sweet.</span></p>
+    </div>
+
+    <footer>
+      <p><small>&copy; 2023- by Dana Vasilchuk, All Rights Reserved ~ 
+        <a id="html-checker" href="#">Check HTML</a> ~ 
+        <a id="css-checker" href="#">Check CSS</a></small></p>
     </footer>
   </main>
+
   <script src="js/main.js"></script>
- </body>
+  <script src="js/dom-play.js"></script>
+</body>
 </html>
